@@ -11,7 +11,7 @@ const lessons = [
     title: "ADDIE Introduction",
     tag: "Introduction",
     tagColor: "bg-teal",
-    duration: "12 min",
+    duration: "1 min",
     icon: "",
     summary:
       "The ADDIE model is a step-by-step process for creating effective learning materials. It has five phases: Analysis, Design, Development, Implementation, and Evaluation.",
@@ -24,25 +24,107 @@ const lessons = [
     ],
   },
   {
-  id: 2,
-  StartTime: 25,
-  StopTime : 120,
-  title: "Title",
-  tag: "Tag",
-  tagColor: "bg-teal",
-  duration: "Duration",
-  icon: "🔧",
-  summary:
-    "Summary",
-  keyPoints: [
-    "Key points",
-    "Key points",
-    "Key points",
-    "Key points",
-  ],
-  iotLink: "Arduino and ESP32 projects combine these exact components: buttons for input, LEDs for output, capacitors for stable power.",
-  visual: "components",
-},
+    id: 2,
+    StartTime: 25,
+    StopTime : 54,
+    title: "Analysis",
+    tag: "Phases",
+    tagColor: "bg-teal",
+    duration: "2 Minutes",
+    icon: "",
+    summary:
+      "The Analysis phase identifies the learners' needs, learning goals, and any problems that the learning material should address.",
+    keyPoints: [
+      "Identifying the learning needs",
+      "Understanding the audience's characteristics",
+      "Defining the learning objectives",
+    ],
+  },
+  {
+    id: 3,
+    StartTime: 54,
+    StopTime : 74,
+    title: "Design",
+    tag: "Phases",
+    tagColor: "bg-teal",
+    duration: "2 Minutes",
+    icon: "",
+    summary:
+      "Plan the learning objectives, lesson structure, activities, assessments, and overall user experience.",
+    keyPoints: [
+      "Outline the high-level design strategy for the course",
+      "Decide on the content",
+      "Determine high level strategies and media",
+      "Create a core blueprint of the core structure",
+    ],
+  },
+  {
+    id: 4,
+    StartTime: 74,
+    StopTime : 94,
+    title: "Develop",
+    tag: "Phases",
+    tagColor: "bg-teal",
+    duration: "2 Minutes",
+    icon: "",
+    summary:
+      "Create and develop the learning materials, multimedia content, and interactive features based on the design.",
+    keyPoints: [
+      "Creation of the course material",
+      "Developing case studies",
+      "Assembling the learning content",
+    ],
+  },
+  {
+    id: 5,
+    StartTime: 94,
+    StopTime : 115,
+    title: "Implement",
+    tag: "Phases",
+    tagColor: "bg-teal",
+    duration: "2 Minutes",
+    icon: "",
+    summary:
+      "Deliver the learning materials to learners and ensure the system is ready for use.",
+    keyPoints: [
+      "Course delivery to the learners",
+      "Scheduling, Registration, and Distribution of materials ",
+    ],
+  },
+  {
+    id: 6,
+    StartTime: 115,
+    StopTime : 140,
+    title: "Evaluate",
+    tag: "Phases",
+    tagColor: "bg-teal",
+    duration: "2 Minutes",
+    icon: "",
+    summary:
+      "Assess the effectiveness of the learning materials through feedback and results, then make improvements where needed.",
+    keyPoints: [
+      "Gathering feedback",
+      "Assessing learner's performance",
+      "Determining the overall effectiveness of the training program",
+    ],
+  },
+  {
+    id: 7,
+    StartTime: 140,
+    StopTime : 170,
+    title: "Why use the ADDIE model?",
+    tag: "Phases",
+    tagColor: "bg-teal",
+    duration: "2 Minutes",
+    icon: "",
+    summary:
+      "The ADDIE model provides a flexible yet structured approach that can be applied to any learning context, helping create organized, effective, and learner-focused educational materials.",
+    keyPoints: [
+      "Guides the development of learning materials step by step.",
+      "Ensures the content is designed based on the target audience and learning objectives.",
+      "Uses evaluation and feedback to improve the learning materials over time.",
+    ],
+  }
 ];
 
 

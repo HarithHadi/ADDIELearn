@@ -11,19 +11,204 @@ import { Link } from "react-router-dom";
 const questions = [
   {
     id: 1,
-    question: "What does ADDIE stand for",
-    options: ["A", "D", "D", "I"],
+    question: "What does ADDIE stand for?",
+    options: [
+      "Analyze, Design, Develop, Implement, Evaluate",
+      "Apply, Design, Develop, Improve, Execute",
+      "Analyze, Decide, Develop, Integrate, Explain",
+      "Assess, Design, Deliver, Improve, Evaluate"
+    ],
     correctIndex: 0,
-    explanation: "it stands for addie",
+    explanation: "ADDIE represents five phases: Analysis, Design, Development, Implementation, and Evaluation.",
   },
   {
     id: 2,
-    question: "",
-    options: ["", "", "", ""],
-    correctIndex: 0,
-    explanation: "",
+    question: "What is the main purpose of the Analysis phase?",
+    options: [
+      "To create learning materials",
+      "To identify learners' needs and learning goals",
+      "To deliver the course to learners",
+      "To collect feedback after training"
+    ],
+    correctIndex: 1,
+    explanation: "The Analysis phase focuses on understanding learner needs, goals, and problems before creating the materials.",
   },
-  // Add more question objects here...
+  {
+    id: 3,
+    question: "Which phase focuses on planning the learning objectives, activities, and structure?",
+    options: [
+      "Development",
+      "Implementation",
+      "Design",
+      "Evaluation"
+    ],
+    correctIndex: 2,
+    explanation: "The Design phase plans the learning structure, objectives, activities, and assessment methods.",
+  },
+  {
+    id: 4,
+    question: "What happens during the Development phase?",
+    options: [
+      "Learning materials and multimedia content are created",
+      "Learners' performance is evaluated",
+      "Learning objectives are identified",
+      "The course is delivered to learners"
+    ],
+    correctIndex: 0,
+    explanation: "The Development phase involves creating learning materials based on the design plan.",
+  },
+  {
+    id: 5,
+    question: "Which phase involves delivering the learning materials to learners?",
+    options: [
+      "Analysis",
+      "Implementation",
+      "Evaluation",
+      "Design"
+    ],
+    correctIndex: 1,
+    explanation: "The Implementation phase focuses on delivering the completed learning materials and making them available to learners.",
+  },
+  {
+    id: 6,
+    question: "What is the purpose of the Evaluation phase?",
+    options: [
+      "To create the first version of the learning materials",
+      "To identify the target audience",
+      "To assess effectiveness and improve the learning materials",
+      "To design the course structure"
+    ],
+    correctIndex: 2,
+    explanation: "The Evaluation phase collects feedback and measures effectiveness to improve the learning experience.",
+  },
+  {
+    id: 7,
+    question: "Why is the ADDIE model used in learning design?",
+    options: [
+      "It provides a flexible yet structured approach for different learning contexts",
+      "It removes the need for evaluation",
+      "It only works for online learning",
+      "It focuses only on creating visual content"
+    ],
+    correctIndex: 0,
+    explanation: "The ADDIE model provides a flexible and structured process that helps create effective learning materials.",
+  },
+  {
+    id: 8,
+    question: "Which ADDIE phase ensures that content matches the learners' objectives?",
+    options: [
+      "Analysis",
+      "Design",
+      "Implementation",
+      "Evaluation"
+    ],
+    correctIndex: 1,
+    explanation: "The Design phase ensures that learning objectives, content, and activities are planned according to learners' needs.",
+  },
+  {
+    id: 9,
+    question: "Which phase includes gathering feedback from learners?",
+    options: [
+      "Development",
+      "Implementation",
+      "Evaluation",
+      "Design"
+    ],
+    correctIndex: 2,
+    explanation: "Evaluation involves collecting feedback and assessing learner performance to determine effectiveness.",
+  },
+  {
+    id: 10,
+    question: "What is one benefit of using the ADDIE model?",
+    options: [
+      "It creates a random learning process",
+      "It helps organize the development of learning materials step by step",
+      "It eliminates the need for learning objectives",
+      "It only focuses on teacher performance"
+    ],
+    correctIndex: 1,
+    explanation: "The ADDIE model provides a systematic process to guide the creation of effective learning materials.",
+  },
+  {
+  id: 11,
+  question: "The ADDIE model consists of five phases: Analysis, Design, Development, Implementation, and Evaluation.",
+  options: [
+    "True",
+    "False"
+  ],
+  correctIndex: 0,
+  explanation: "ADDIE contains five main phases that guide the process of creating effective learning materials.",
+},
+{
+  id: 12,
+  question: "The Analysis phase focuses on creating multimedia content and learning materials.",
+  options: [
+    "True",
+    "False"
+  ],
+  correctIndex: 1,
+  explanation: "Creating learning materials is part of the Development phase. The Analysis phase focuses on identifying learner needs and goals.",
+},
+{
+  id: 13,
+  question: "The Design phase involves planning learning objectives, activities, and assessments.",
+  options: [
+    "True",
+    "False"
+  ],
+  correctIndex: 0,
+  explanation: "The Design phase is responsible for planning the structure and strategy of the learning materials.",
+},
+{
+  id: 14,
+  question: "The Development phase creates learning materials based on the design plan.",
+  options: [
+    "True",
+    "False"
+  ],
+  correctIndex: 0,
+  explanation: "The Development phase involves producing content, multimedia resources, and learning activities.",
+},
+{
+  id: 15,
+  question: "The Implementation phase evaluates learner feedback and measures the effectiveness of the course.",
+  options: [
+    "True",
+    "False"
+  ],
+  correctIndex: 1,
+  explanation: "The Evaluation phase is responsible for collecting feedback and assessing effectiveness.",
+},
+{
+  id: 16,
+  question: "The Evaluation phase helps improve learning materials through feedback and assessment.",
+  options: [
+    "True",
+    "False"
+  ],
+  correctIndex: 0,
+  explanation: "Evaluation identifies areas for improvement by analyzing feedback and learner performance.",
+},
+{
+  id: 17,
+  question: "The ADDIE model can only be used for online learning environments.",
+  options: [
+    "True",
+    "False"
+  ],
+  correctIndex: 1,
+  explanation: "The ADDIE model is flexible and can be applied to different learning contexts, including online and traditional learning.",
+},
+{
+  id: 18,
+  question: "The ADDIE model provides a structured approach to developing effective learning materials.",
+  options: [
+    "True",
+    "False"
+  ],
+  correctIndex: 0,
+  explanation: "ADDIE provides a step-by-step process that helps organize and improve learning design.",
+},
 ];
 
 // ── MAIN COMPONENT ─────────────────────────────────────────────
@@ -117,7 +302,7 @@ export default function Quizcomp() {
 
                     if (answered) {
                       if (isCorrect) {
-                        bg = "var(--color-teal)";
+                        bg = "var(--color-correct)";
                       } else if (isSelected && !isCorrect) {
                         bg = "var(--color-coral)";
                       }
