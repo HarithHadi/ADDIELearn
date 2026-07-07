@@ -221,7 +221,7 @@ export default function Lesson() {
 
   return (
     <div className="min-h-screen bg-cream font-retro">
-      <div className="relative max-w-5xl mx-auto px-4">
+      <div className="relative max-w-5xl mx-auto px-4 pb-4">
         {/* Page header */}
         <div className="mb-2">
           <h1 className="text-4xl md:text-5xl font-black leading-tight uppercase text-ink">
@@ -336,7 +336,7 @@ export default function Lesson() {
                   </p>
                   <div className="flex flex-col gap-2.5">
                     {lesson.keyPoints.map((point, i) => (
-                      <div key={i} className="flex items-start gap-3">
+                      <div key={i} className="flex items-start gap-1">
                         <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-xs font-black border-2 border-ink bg-cream-dark text-ink">
                           {i + 1}
                         </div>

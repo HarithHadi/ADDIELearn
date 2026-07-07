@@ -5,21 +5,12 @@ const links = [
     { label: "Home", to: "/"},
     { label: "Learn", to: "/Lesson"},
     { label: "Quiz", to: "/Quiz"},
-    { label: "Progress", to: "/Progress"},
 ];
-
-/* ----------------------------------------------------------------------------------
-Steps to Add links to Navbar
-
-1. Import Component to App.jsx
-2. Add Component in Routes "<Route path="/LinkName" element={<Component />} />"
-3. Add Link in links variable 
-
----------------------------------------------------------------------------------- */
 
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
 
     return(
         <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-6xl bg-cream border-2 border-black rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-mono">
