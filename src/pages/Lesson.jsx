@@ -349,69 +349,70 @@ export default function Lesson() {
             </div>
 
             {/* Navigation buttons */}
-            <div className="flex items-center justify-between gap-3">
-              <button
-                onClick={() => currentIndex > 0 && setActiveId(lessons[currentIndex - 1].id)}
-                disabled={currentIndex === 0}
-                className="flex items-center gap-2 px-5 py-3 rounded-retro text-sm font-bold border-2 border-ink transition-all"
-                style={{
-                  background: currentIndex === 0 ? "var(--color-cream-dark)" : "var(--color-cream)",
-                  color: currentIndex === 0 ? "rgba(0,0,0,0.35)" : "var(--color-ink)",
-                  boxShadow: currentIndex === 0 ? "none" : "3px 3px 0px 0px rgba(0,0,0,1)",
-                  cursor: currentIndex === 0 ? "not-allowed" : "pointer",
-                }}
-              >
-                ← Previous
-              </button>
+            {/* Navigation buttons */}
+<div className="flex flex-wrap items-center justify-center sm:justify-between gap-3 sm:gap-3">
+  <button
+    onClick={() => currentIndex > 0 && setActiveId(lessons[currentIndex - 1].id)}
+    disabled={currentIndex === 0}
+    className="order-1 flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 rounded-retro text-xs sm:text-sm font-bold border-2 border-ink transition-all"
+    style={{
+      background: currentIndex === 0 ? "var(--color-cream-dark)" : "var(--color-cream)",
+      color: currentIndex === 0 ? "rgba(0,0,0,0.35)" : "var(--color-ink)",
+      boxShadow: currentIndex === 0 ? "none" : "3px 3px 0px 0px rgba(0,0,0,1)",
+      cursor: currentIndex === 0 ? "not-allowed" : "pointer",
+    }}
+  >
+    ← Previous
+  </button>
 
-              {/* Progress dots */}
-              <div className="flex items-center gap-2">
-                {lessons.map((l) => (
-                  <button
-                    key={l.id}
-                    onClick={() => setActiveId(l.id)}
-                    className="rounded-full border-2 border-ink transition-all"
-                    style={{
-                      width: l.id === activeId ? "22px" : "10px",
-                      height: "10px",
-                      background:
-                        l.id === activeId
-                          ? "var(--color-ink)"
-                          : l.id < activeId
-                          ? "var(--color-coral)"
-                          : "var(--color-cream)",
-                    }}
-                  />
-                ))}
-              </div>
+  {/* Progress dots */}
+  <div className="order-3 sm:order-2 w-full sm:w-auto flex items-center justify-center gap-2">
+    {lessons.map((l) => (
+      <button
+        key={l.id}
+        onClick={() => setActiveId(l.id)}
+        className="rounded-full border-2 border-ink transition-all shrink-0"
+        style={{
+          width: l.id === activeId ? "22px" : "10px",
+          height: "10px",
+          background:
+            l.id === activeId
+              ? "var(--color-ink)"
+              : l.id < activeId
+              ? "var(--color-coral)"
+              : "var(--color-cream)",
+        }}
+      />
+    ))}
+  </div>
 
-              {currentIndex < lessons.length - 1 ? (
-                <button
-                  onClick={() => setActiveId(lessons[currentIndex + 1].id)}
-                  className="flex items-center gap-2 px-5 py-3 rounded-retro text-sm font-black border-2 border-ink transition-all hover:translate-x-[1px] hover:translate-y-[1px] active:translate-x-[3px] active:translate-y-[3px]"
-                  style={{
-                    background: "var(--color-teal)",
-                    color: "var(--color-ink)",
-                    boxShadow: "3px 3px 0px 0px rgba(0,0,0,1)",
-                  }}
-                >
-                  Next →
-                </button>
-              ) : (
-                <Link to="/quiz">
-                  <button
-                    className="flex items-center gap-2 px-5 py-3 rounded-retro text-sm font-black border-2 border-ink transition-all hover:translate-x-[1px] hover:translate-y-[1px] active:translate-x-[3px] active:translate-y-[3px]"
-                    style={{
-                      background: "var(--color-coral)",
-                      color: "var(--color-ink)",
-                      boxShadow: "3px 3px 0px 0px rgba(0,0,0,1)",
-                    }}
-                  >
-                    Try Quiz
-                  </button>
-                </Link>
-              )}
-            </div>
+  {currentIndex < lessons.length - 1 ? (
+    <button
+      onClick={() => setActiveId(lessons[currentIndex + 1].id)}
+      className="order-2 sm:order-3 flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 rounded-retro text-xs sm:text-sm font-black border-2 border-ink transition-all hover:translate-x-[1px] hover:translate-y-[1px] active:translate-x-[3px] active:translate-y-[3px]"
+      style={{
+        background: "var(--color-teal)",
+        color: "var(--color-ink)",
+        boxShadow: "3px 3px 0px 0px rgba(0,0,0,1)",
+      }}
+    >
+      Next →
+    </button>
+  ) : (
+    <Link to="/quiz" className="order-2 sm:order-3">
+      <button
+        className="flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 rounded-retro text-xs sm:text-sm font-black border-2 border-ink transition-all hover:translate-x-[1px] hover:translate-y-[1px] active:translate-x-[3px] active:translate-y-[3px]"
+        style={{
+          background: "var(--color-coral)",
+          color: "var(--color-ink)",
+          boxShadow: "3px 3px 0px 0px rgba(0,0,0,1)",
+        }}
+      >
+        Try Quiz
+      </button>
+    </Link>
+  )}
+</div>
           </div>
         </div>
       </div>
