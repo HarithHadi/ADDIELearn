@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 const questions = [
   {
     id: 1,
+    bloomLevel: "Remember",
     question: "What does ADDIE stand for?",
     options: [
       "Analyze, Design, Develop, Implement, Evaluate",
@@ -23,6 +24,80 @@ const questions = [
   },
   {
     id: 2,
+    bloomLevel: "Remember",
+    question: "Which phase involves delivering the learning materials to learners?",
+    options: ["Analysis", "Implementation", "Evaluation", "Design"],
+    correctIndex: 1,
+    explanation: "The Implementation phase focuses on delivering the completed learning materials and making them available to learners.",
+  },
+  {
+    id: 3,
+    bloomLevel: "Remember",
+    question: "Which phase includes gathering feedback from learners?",
+    options: ["Development", "Implementation", "Evaluation", "Design"],
+    correctIndex: 2,
+    explanation: "Evaluation involves collecting feedback and assessing learner performance to determine effectiveness.",
+  },
+  {
+    id: 4,
+    bloomLevel: "Remember",
+    question: "The ADDIE model consists of five phases: Analysis, Design, Development, Implementation, and Evaluation.",
+    options: ["True", "False"],
+    correctIndex: 0,
+    explanation: "ADDIE contains five main phases that guide the process of creating effective learning materials.",
+  },
+  {
+    id: 5,
+    bloomLevel: "Remember",
+    question: "The Analysis phase focuses on creating multimedia content and learning materials.",
+    options: ["True", "False"],
+    correctIndex: 1,
+    explanation: "Creating learning materials is part of the Development phase. The Analysis phase focuses on identifying learner needs and goals.",
+  },
+  {
+    id: 6,
+    bloomLevel: "Remember",
+    question: "The Design phase involves planning learning objectives, activities, and assessments.",
+    options: ["True", "False"],
+    correctIndex: 0,
+    explanation: "The Design phase is responsible for planning the structure and strategy of the learning materials.",
+  },
+  {
+    id: 7,
+    bloomLevel: "Remember",
+    question: "The Development phase creates learning materials based on the design plan.",
+    options: ["True", "False"],
+    correctIndex: 0,
+    explanation: "The Development phase involves producing content, multimedia resources, and learning activities.",
+  },
+  {
+    id: 8,
+    bloomLevel: "Remember",
+    question: "The Implementation phase evaluates learner feedback and measures the effectiveness of the course.",
+    options: ["True", "False"],
+    correctIndex: 1,
+    explanation: "The Evaluation phase is responsible for collecting feedback and assessing effectiveness.",
+  },
+  {
+    id: 9,
+    bloomLevel: "Remember",
+    question: "The Evaluation phase helps improve learning materials through feedback and assessment.",
+    options: ["True", "False"],
+    correctIndex: 0,
+    explanation: "Evaluation identifies areas for improvement by analyzing feedback and learner performance.",
+  },
+  {
+    id: 10,
+    bloomLevel: "Remember",
+    question: "The ADDIE model provides a structured approach to developing effective learning materials.",
+    options: ["True", "False"],
+    correctIndex: 0,
+    explanation: "ADDIE provides a step-by-step process that helps organize and improve learning design.",
+  },
+
+  {
+    id: 11,
+    bloomLevel: "Understand",
     question: "What is the main purpose of the Analysis phase?",
     options: [
       "To create learning materials",
@@ -34,19 +109,16 @@ const questions = [
     explanation: "The Analysis phase focuses on understanding learner needs, goals, and problems before creating the materials.",
   },
   {
-    id: 3,
+    id: 12,
+    bloomLevel: "Understand",
     question: "Which phase focuses on planning the learning objectives, activities, and structure?",
-    options: [
-      "Development",
-      "Implementation",
-      "Design",
-      "Evaluation"
-    ],
+    options: ["Development", "Implementation", "Design", "Evaluation"],
     correctIndex: 2,
     explanation: "The Design phase plans the learning structure, objectives, activities, and assessment methods.",
   },
   {
-    id: 4,
+    id: 13,
+    bloomLevel: "Understand",
     question: "What happens during the Development phase?",
     options: [
       "Learning materials and multimedia content are created",
@@ -58,19 +130,8 @@ const questions = [
     explanation: "The Development phase involves creating learning materials based on the design plan.",
   },
   {
-    id: 5,
-    question: "Which phase involves delivering the learning materials to learners?",
-    options: [
-      "Analysis",
-      "Implementation",
-      "Evaluation",
-      "Design"
-    ],
-    correctIndex: 1,
-    explanation: "The Implementation phase focuses on delivering the completed learning materials and making them available to learners.",
-  },
-  {
-    id: 6,
+    id: 14,
+    bloomLevel: "Understand",
     question: "What is the purpose of the Evaluation phase?",
     options: [
       "To create the first version of the learning materials",
@@ -82,7 +143,8 @@ const questions = [
     explanation: "The Evaluation phase collects feedback and measures effectiveness to improve the learning experience.",
   },
   {
-    id: 7,
+    id: 15,
+    bloomLevel: "Understand",
     question: "Why is the ADDIE model used in learning design?",
     options: [
       "It provides a flexible yet structured approach for different learning contexts",
@@ -94,31 +156,16 @@ const questions = [
     explanation: "The ADDIE model provides a flexible and structured process that helps create effective learning materials.",
   },
   {
-    id: 8,
+    id: 16,
+    bloomLevel: "Understand",
     question: "Which ADDIE phase ensures that content matches the learners' objectives?",
-    options: [
-      "Analysis",
-      "Design",
-      "Implementation",
-      "Evaluation"
-    ],
+    options: ["Analysis", "Design", "Implementation", "Evaluation"],
     correctIndex: 1,
     explanation: "The Design phase ensures that learning objectives, content, and activities are planned according to learners' needs.",
   },
   {
-    id: 9,
-    question: "Which phase includes gathering feedback from learners?",
-    options: [
-      "Development",
-      "Implementation",
-      "Evaluation",
-      "Design"
-    ],
-    correctIndex: 2,
-    explanation: "Evaluation involves collecting feedback and assessing learner performance to determine effectiveness.",
-  },
-  {
-    id: 10,
+    id: 17,
+    bloomLevel: "Understand",
     question: "What is one benefit of using the ADDIE model?",
     options: [
       "It creates a random learning process",
@@ -130,91 +177,60 @@ const questions = [
     explanation: "The ADDIE model provides a systematic process to guide the creation of effective learning materials.",
   },
   {
-  id: 11,
-  question: "The ADDIE model consists of five phases: Analysis, Design, Development, Implementation, and Evaluation.",
-  options: [
-    "True",
-    "False"
-  ],
-  correctIndex: 0,
-  explanation: "ADDIE contains five main phases that guide the process of creating effective learning materials.",
-},
-{
-  id: 12,
-  question: "The Analysis phase focuses on creating multimedia content and learning materials.",
-  options: [
-    "True",
-    "False"
-  ],
-  correctIndex: 1,
-  explanation: "Creating learning materials is part of the Development phase. The Analysis phase focuses on identifying learner needs and goals.",
-},
-{
-  id: 13,
-  question: "The Design phase involves planning learning objectives, activities, and assessments.",
-  options: [
-    "True",
-    "False"
-  ],
-  correctIndex: 0,
-  explanation: "The Design phase is responsible for planning the structure and strategy of the learning materials.",
-},
-{
-  id: 14,
-  question: "The Development phase creates learning materials based on the design plan.",
-  options: [
-    "True",
-    "False"
-  ],
-  correctIndex: 0,
-  explanation: "The Development phase involves producing content, multimedia resources, and learning activities.",
-},
-{
-  id: 15,
-  question: "The Implementation phase evaluates learner feedback and measures the effectiveness of the course.",
-  options: [
-    "True",
-    "False"
-  ],
-  correctIndex: 1,
-  explanation: "The Evaluation phase is responsible for collecting feedback and assessing effectiveness.",
-},
-{
-  id: 16,
-  question: "The Evaluation phase helps improve learning materials through feedback and assessment.",
-  options: [
-    "True",
-    "False"
-  ],
-  correctIndex: 0,
-  explanation: "Evaluation identifies areas for improvement by analyzing feedback and learner performance.",
-},
-{
-  id: 17,
-  question: "The ADDIE model can only be used for online learning environments.",
-  options: [
-    "True",
-    "False"
-  ],
-  correctIndex: 1,
-  explanation: "The ADDIE model is flexible and can be applied to different learning contexts, including online and traditional learning.",
-},
-{
-  id: 18,
-  question: "The ADDIE model provides a structured approach to developing effective learning materials.",
-  options: [
-    "True",
-    "False"
-  ],
-  correctIndex: 0,
-  explanation: "ADDIE provides a step-by-step process that helps organize and improve learning design.",
-},
+    id: 18,
+    bloomLevel: "Understand",
+    question: "The ADDIE model can only be used for online learning environments.",
+    options: ["True", "False"],
+    correctIndex: 1,
+    explanation: "The ADDIE model is flexible and can be applied to different learning contexts, including online and traditional learning.",
+  },
+
+  {
+    id: 19,
+    bloomLevel: "Apply",
+    question:
+      "A team just finished interviewing employees to find out why they're struggling with a new software tool, and defined clear training goals from those interviews. Which phase are they in?",
+    options: ["Design", "Analysis", "Development", "Implementation"],
+    correctIndex: 1,
+    explanation:
+      "Identifying the problem and defining learning goals from real user needs is the core job of the Analysis phase — even though the word 'analysis' isn't used in the scenario.",
+  },
+  {
+    id: 20,
+    bloomLevel: "Apply",
+    question:
+      "A trainer builds an interactive branching scenario where employees choose how to respond to a customer complaint, based on objectives and an outline that were already approved. Which phase is this work part of?",
+    options: ["Analysis", "Design", "Development", "Implementation"],
+    correctIndex: 2,
+    explanation:
+      "Building the actual interactive exercise from an already-approved outline is content creation — that's the Development phase's job, not Design (which already happened).",
+  },
+
+  {
+    id: 21,
+    bloomLevel: "Analyze",
+    question:
+      "A course launched with polished videos and a slick interface, but learners still can't do their jobs afterward, and nobody collected feedback to find out why. Which phase was most likely skipped or rushed?",
+    options: ["Development", "Implementation", "Evaluation", "Design"],
+    correctIndex: 2,
+    explanation:
+      "Skipping Evaluation means no one measured whether the training actually worked or gathered feedback to improve it — polish in Development doesn't guarantee effectiveness.",
+  },
+  {
+    id: 22,
+    bloomLevel: "Analyze",
+    question:
+      "A training program has excellent design documents and well-produced materials, but on launch day half the learners can't log into the system and never receive their materials. Which phase most likely broke down?",
+    options: ["Design", "Development", "Implementation", "Evaluation"],
+    correctIndex: 2,
+    explanation:
+      "Even flawless materials fail if the rollout — access, scheduling, distribution — isn't executed properly. That breakdown belongs to Implementation, not Development.",
+  },
 ];
 
 // ── MAIN COMPONENT ─────────────────────────────────────────────
 export default function Quizcomp() {
   const [activeIndex, setActiveIndex] = useState(0);
-  // answers[i] = index of the option the user picked for question i, or null if unanswered
   const [answers, setAnswers] = useState(() => questions.map(() => null));
   const [finished, setFinished] = useState(false);
 
@@ -230,6 +246,12 @@ export default function Quizcomp() {
     0
   );
   const allAnswered = answers.every((a) => a !== null);
+    const bloomColors = {
+    Remember: "var(--color-teal)",
+    Understand: "var(--color-teal)",
+    Apply: "var(--color-coral)",
+    Analyze: "var(--color-coral)",
+  };
 
   function handleSelect(i) {
     if (answered) return;
@@ -278,6 +300,12 @@ export default function Quizcomp() {
             <div className="rounded-retro overflow-hidden bg-white border-2 border-ink shadow-retro">
               {/* Card header */}
               <div className="px-7 py-5 border-b-2 border-ink flex items-center justify-between gap-4 bg-cream-dark">
+                <span
+                  className="inline-block text-xs font-bold px-3 py-1 rounded-retro border-2 border-ink uppercase tracking-wide text-ink"
+                  style={{ background: bloomColors[question.bloomLevel] }}
+                >
+                  {question.bloomLevel}
+                </span>
                 <span className="inline-block text-xs font-bold px-3 py-1 rounded-retro border-2 border-ink uppercase tracking-wide text-ink bg-teal">
                   Question {activeIndex + 1} / {questions.length}
                 </span>

@@ -198,7 +198,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── FINAL CTA ──────────────────────────────────────── */}
         <section className="mb-16">
           <div
             className="rounded-retro p-6 md:p-8 border-2 border-ink flex flex-col md:flex-row items-center justify-between gap-5"

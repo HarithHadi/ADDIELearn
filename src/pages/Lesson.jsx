@@ -325,22 +325,22 @@ export default function Lesson() {
               {/* Content */}
               <div className="px-7 py-6">
                 {/* Summary */}
-                <p className="text-sm leading-relaxed mb-6 text-ink/80">
+                <p className="text-sm leading-relaxed font-semibold mb-6 text-ink/80">
                   {lesson.summary}
                 </p>
 
                 {/* Key points */}
                 <div className="mb-6">
-                  <p className="text-xs font-bold tracking-widest uppercase mb-3 text-ink/60">
+                  <p className="text-xs font-semibold tracking-widest uppercase mb-3 text-ink/60">
                     Key Points
                   </p>
                   <div className="flex flex-col gap-2.5">
                     {lesson.keyPoints.map((point, i) => (
                       <div key={i} className="flex items-start gap-3">
-                        <div className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-black border-2 border-ink bg-cream-dark text-ink">
+                        <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-xs font-black border-2 border-ink bg-cream-dark text-ink">
                           {i + 1}
                         </div>
-                        <p className="text-sm leading-relaxed text-ink/80">{point}</p>
+                        <p className="text-sm leading-relaxed text-ink/80 font-semibold">{point}</p>
                       </div>
                     ))}
                   </div>
