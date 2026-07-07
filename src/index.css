@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-cream;
+}
+
+@theme {
+  --color-cream: #e8e3d3;
+  --color-cream-dark: #d8d2bd;
+  --color-ink: #1D2128;
+  --color-teal: #7ec8c3;
+  --color-coral: #e8a598;
+
+  --font-retro: "JetBrains Mono", "Courier New", monospace;
+
+  --shadow-retro: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+
+
+  --radius-retro: 0.5rem;
+}
+
